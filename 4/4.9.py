@@ -20,6 +20,6 @@ async def main():
                 print("got a error")
 
         for task in asyncio.tasks.all_tasks():
-            print(task)
+            print(type(task))
 
 asyncio.run(main())

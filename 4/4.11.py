@@ -5,7 +5,7 @@ import sys
 sys.path.insert(0, sys.path[0]+"/../")
 from util import async_timed, fetch_status
 
-asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+# asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 @async_timed()
 async def main():
