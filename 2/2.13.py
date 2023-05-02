@@ -5,7 +5,7 @@ sys.path.insert(0, sys.path[0]+"/../")
 from util import delay
 
 async def main():
-    task = asyncio.create_task(delay(2))
+    task = asyncio.create_task(delay(8))
     try:
         result = await asyncio.wait_for(asyncio.shield(task), 3)
         print(result) # 无输出
